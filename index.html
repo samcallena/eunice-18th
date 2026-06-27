@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eunice's 18th Birthday Lookbook</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <audio id="bg-music" loop src="background-music.mp3"></audio>
+    <audio id="pop-sfx" src="pop.mp3"></audio>
+    <audio id="unlock-sfx" src="unlock.mp3"></audio>
+    <audio id="victory-sfx" src="victory.mp3"></audio>
+
+    <button id="music-toggle-btn" class="music-btn">🎵 Play Music</button>
+    <div id="sparkles"></div>
+    <div id="confetti-canvas"></div>
+
+    <div class="wrapper">
+        <header class="header">
+            <span class="subtitle">CHRONICLES OF FRIENDSHIP</span>
+            <h1 class="title">Happy 18th, Eunice!</h1>
+            <p class="tagline">ENJOY YOUR DAY FULL OF LOVE! ✨</p>
+        </header>
+
+        <main class="photo-grid">
+            <div class="photo-card large-anchor clickable-photo" data-memory="queen">
+                <img src="972f8d96-c4ba-4c1c-8fbd-b05e83181504.jpg" alt="Eunice Solo Door">
+                <span class="badge">💖 CLICK ME!</span>
+            </div>
+            <div class="photo-card clickable-photo" data-memory="cute">
+                <img src="550e8f7b-4b3f-45e5-9d1b-5c35c35233e5.jpg" alt="Graduation Celebration Selfie">
+                <span class="badge cute">💝 CLICK ME!</span>
+            </div>
+            <div class="photo-card clickable-photo" data-memory="friendship">
+                <img src="f0ba47db-dde7-4e71-8f08-ceab135be0a6.jpg" alt="Outdoor Selfie Fun">
+                <span class="badge friendship">💞 CLICK ME!</span>
+            </div>
+        </main>
+
+        <section id="game-zone" class="game-section">
+            <h3>🔑 Unlock the Sweet Surprise</h3>
+            <p class="game-instructions">Tap these three items to unlock the interactive gift box below!</p>
+            <div class="game-items">
+                <button class="game-btn" data-item="key">🔑<span class="btn-lbl">Key</span></button>
+                <button class="game-btn" data-item="heart">❤️<span class="btn-lbl">Heart</span></button>
+                <button class="game-btn" data-item="star">⭐<span class="btn-lbl">Star</span></button>
+            </div>
+        </section>
+
+        <section id="gift-section" class="gift-section locked">
+            <div class="gift-box-wrapper">
+                <div id="gift-box" class="gift-box">
+                    <div class="box-lid">
+                        <div class="ribbon-vertical"></div>
+                        <div class="ribbon-horizontal"></div>
+                        <div class="ribbon-bow"></div>
+                    </div>
+                    <div class="box-body">
+                        <div class="ribbon-vertical"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="memory-modal" class="modal-overlay">
+        <div class="modal-card">
+            <button id="modal-close-btn" class="modal-close">&times;</button>
+            <div id="modal-dynamic-content">
+                </div>
+        </div>
+    </div>
+
+    <div id="letter-modal" class="modal-overlay">
+        <div class="grand-letter-card">
+            <button id="letter-close-btn" class="modal-close letter-close">&times;</button>
+            <article class="letter-content">
+                <h3>Dear Eunice,</h3>
+                <p class="letter-date">June 27, 2026</p>
+                
+                <p>Happy 18th birthday!! Finally, legal ka na HAHAHA. Ang bilis talaga ng panahon. Parang kailan lang nasa school lang tayo araw-araw, tapos ngayon gurang ka na. I hope you enjoy your day and celebrate it with the people you love. Deserve mo 'yan.</p>
+                
+                <p>Miss ko na 'yung school days natin. 'Yung mga random chikahan, sabay kumain, tawanan kahit ang babaw lang ng dahilan, and 'yung simpleng magkasama lang tayo. Hindi ko in-expect na ma-mi-miss ko pala 'yung mga ordinary days na 'yon. Kahit mag-ga-gap year ako at hindi na tayo masyadong magkikita this year, sana alam mong nothing will change. You're still one of the people I'll always make time for.</p>
+                
+                <p>Thank you sa lahat. Thank you kasi lagi kang nand'yan, sa support mo, sa effort mong samahan ako, at sa pag-check up on me kahit simpleng chat lang. Hindi ko man laging nasasabi, pero sobrang na-a-appreciate ko lahat ng ginagawa mo.</p>
+                
+                <p>Naalala mo pa ba 'yung last misunderstanding natin? HAHAHA. Hindi ko na nga maalala kung ano 'yung dahilan, pero naaalala ko 'yung ilang weeks tayong hindi nagpansinan. Mukha lang siguro akong okay no'n, pero totoo, nalungkot talaga ako. Doon ko na-realize na ayaw kong umabot sa point na mawala yung friendship natin dahil lang sa isang misunderstanding.</p>
+                
+                <p>And gurl, sobrang proud ako sa 'yo. Ang dami nang nangyari, andang dami mo pang ma-a-achieve. I'm really happy seeing you grow and become the person you are now. Sana huwag kang magduda sa sarili mo kasi kaya mo 'yan, ikaw pa :3. </p>
+                
+                <p>I know magiging busy na tayo pareho, and baka hindi na tulad dati na halos araw-araw tayong nagkikita. Pero kahit gano'n, alam mong nandito lang ako. Kahit matagal tayong hindi mag-usap, parang wala lang naman 'yan 'pag nagkita ulit tayo HAHAHA.</p>
+                
+                <p>Happy 18th ulit, Eunice. Thank you for making my school days a lot better and for being such a good friend. I hope this year brings you more happiness, more opportunities, and everything you've been praying for. Enjoy your day, have fun, and stay the same. Love you, bbgurl.</p>
+
+                <p class="sign-off">Always cheering for you, ✨</p>
+            </article>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
